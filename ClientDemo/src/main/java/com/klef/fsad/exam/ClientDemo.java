@@ -23,8 +23,8 @@ public class ClientDemo
         Transaction tx2 = session2.beginTransaction();
 
         Product product = session2.get(Product.class, p.getId());
-        product.setName("Updated product");
-        product.setStatus("1 left");
+        product.setName("Updated Laptop");
+        product.setStatus("Out of stock");
 
         session2.update(product);
 
